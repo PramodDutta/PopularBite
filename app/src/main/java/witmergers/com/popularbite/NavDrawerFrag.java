@@ -21,6 +21,7 @@ public class NavDrawerFrag extends Fragment {
 
     public NavDrawerFrag() {
         // Required empty public constructor
+
     }
 
 

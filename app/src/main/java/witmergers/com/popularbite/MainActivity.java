@@ -86,6 +86,7 @@ public class MainActivity extends ActionBarActivity {
             return true;
         } if (id == R.id.action_search) {
             Toast.makeText(this,"This is Search",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"This is Search",Toast.LENGTH_SHORT).show();
             return true;
         }
 
