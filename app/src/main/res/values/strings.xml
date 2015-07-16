@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PopularBite</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+
+    <string-array name="sites">
+        <item >Twitter</item>
+        <item >Reddit</item>
+        <item >Instagram</item>
+        <item >Pinterest</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Welcome to the PopulerBite</string>
+    <string name="d_open">Open</string>
+    <string name="d_close">Close</string>
+</resources>
