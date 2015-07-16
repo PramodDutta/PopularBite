@@ -87,14 +87,18 @@
             android:layout_height="match_parent" />
 
 -->
-        <it.gmariotti.cardslib.library.view.CardViewNative
+       <!-- <it.gmariotti.cardslib.library.view.CardViewNative
             android:id="@+id/carddemo_largeimage"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             card:card_layout_resourceID="@layout/native_material_largeimage_card"
             style="@style/card_external"
             />
-
+-->
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

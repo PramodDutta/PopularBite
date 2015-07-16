@@ -1,5 +1,6 @@
 package witmergers.com.popularbite;
 
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -24,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+// Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -37,12 +39,12 @@ public class MainActivity extends ActionBarActivity {
         circularImageView.setSelectorStrokeWidth(10);
         circularImageView.addShadow();
 
-        MaterialLargeImageCard card =
+      /*  MaterialLargeImageCard card =
                 MaterialLargeImageCard.with(this)
                         .setTextOverImage("Italian Beaches")
                         .setTitle("This is Done")
                         .useDrawableId(R.drawable.bg)
-                        .build();
+                        .build();*/
 
       /* card.setOnClickListener(new Card.OnCardClickListener() {
            @Override
@@ -59,6 +61,9 @@ public class MainActivity extends ActionBarActivity {
         drawerFrag = (NavDrawerFrag)getSupportFragmentManager().findFragmentById(R.id.navigation_drawer_fragment);
         drawerFrag.setUp((DrawerLayout)findViewById(R.id.drawer_layout),toolbar);
 
+
+        ViewPager pager = (ViewPager) rootView.findViewById(R.id.pager);
+        pager.setAdapter(new ImageAdapter(this));
 
 
     }
@@ -82,7 +87,7 @@ public class MainActivity extends ActionBarActivity {
             Toast.makeText(this, "This is Setting", Toast.LENGTH_SHORT).show();
             return true;
         } if (id == R.id.action_user) {
-            Toast.makeText(this,"This is Share Click",Toast.LENGTH_SHORT).show();
+            Toast.makeText  (this,"This is Share Click",Toast.LENGTH_SHORT).show();
             return true;
         } if (id == R.id.action_search) {
             Toast.makeText(this,"This is Search",Toast.LENGTH_SHORT).show();

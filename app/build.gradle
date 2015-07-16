@@ -38,6 +38,5 @@ dependencies {
     //Optional for drag and drop
     compile 'com.github.gabrielemariotti.cards:cardslib-extra-dragdrop:2.1.0'
 
-    //Optional for twoway  (coming soon)
-    //compile 'com.github.gabrielemariotti.cards:cardslib-extra-twoway:2.1.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
 }
